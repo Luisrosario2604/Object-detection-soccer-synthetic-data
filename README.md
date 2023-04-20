@@ -188,7 +188,7 @@ Press any key to skip images or exit.
 </p>
 
 <p align="center">
-  <img src="./Imgs/Test1.png">
+  <img src="./Imgs/val-1.png">
 </p>
 <p align="center">
   <i>Example of val_real model</i>
