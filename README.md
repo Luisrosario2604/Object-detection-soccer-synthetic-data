@@ -1,13 +1,13 @@
 # Object-detection-soccer-synthetic-data
 
-Object detection for soccer trained with synthetic images (Blender) [README NOT FINISHED]
+Object detection for soccer trained with synthetic images (Blender)
 
 #### 👨‍🎓 This project was carried out during my master's degree in computer vision at URJC - Madrid
 
 ## Summary
 
 This project is the result of my master thesis.
-This project present an object detection model for soccer situations.
+This project presents an object detection model for soccer situations.
 The model has been only trained with synthetic images created with Blender.
 The model has been trained via transfer learning with YoloV8.
 
@@ -15,7 +15,7 @@ This project is divided in 2 big sections: the generation of the synthetic data 
 
 The goal of this readme is to explain how to install and use the project.
 
-###### More explanations in ```Docs/[TODO].pdf``` (only in spanish)
+###### More explanations in ```Docs/TFM_Luis_ROSARIO_TREMOULET.pdf``` (only in spanish)
 
 ## Goals
 
