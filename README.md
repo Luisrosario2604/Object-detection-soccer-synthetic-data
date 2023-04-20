@@ -1,6 +1,6 @@
 # Object-detection-soccer-synthetic-data
 
-Object detection for soccer trained with synthetic images (Blender)
+Object detection for soccer trained with synthetic images (Blender) [README NOT FINISHED]
 
 #### 👨‍🎓 This project was carried out during my master's degree in computer vision at URJC - Madrid
 
