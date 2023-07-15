@@ -55,7 +55,7 @@ $ pip3 install -r requirements.txt
 Open ```[Soccer Arena] Win & Linux.blend``` in Blender.
 
 <p align="center">
-  <img src="./Imgs/blender_step_1_m.png">
+  <img src="./Imgs/blender-step-1.png">
 </p>
 <p align="center">
   <i>Blender project should like this</i>
@@ -63,18 +63,24 @@ Open ```[Soccer Arena] Win & Linux.blend``` in Blender.
 
 1) Click on the viewport section ```(1)``` if you want to change the scene view (not required)
 
-2) Click on the code section ```(2)``` and press ```ALT + P``` to add the add-on to Blender.
+2) Click on the code section ```(2)``` and press ```ALT + P``` to install the Python3 packages (needed!).
+
+3) Click on the code section ```(3)``` (book icon) 
+
+4) Select "F Main" file on the section ```(4)``` (changes the script)
 
 <p align="center">
-  <img src="./Imgs/blender_step_2_m.png">
+  <img src="./Imgs/blender-step-2.png">
 </p>
 <p align="center">
   <i>The soccer panel should have appeared (3)</i>
 </p>
 
-3Locate the ```Soccer_saves/``` folder in the soccer panel ```(4)```.
+5) Click on the code section ```(5)``` and press ```ALT + P``` to add the add-on to Blender.
 
-4You can start to use the add-on (scroll on the add-on to view all options).
+6) Locate the ```Soccer_saves/``` folder in the soccer panel ```(6)```.
+
+7) You can start to use the add-on (scroll on the add-on to view all options).
 
 ## Usage (Use the models already trained)
 
