@@ -24,7 +24,7 @@ def get_arguments():
     ap.add_argument("-m", "--model", required=True, help="model path (*.pt)")
     args = vars(ap.parse_args())
 
-    input_file = args["input"]
+    input_file = args["file"]
     model_path = args["model"]
 
     if not os.path.isfile(input_file):
