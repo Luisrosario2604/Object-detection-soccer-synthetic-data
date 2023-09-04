@@ -27,7 +27,7 @@ The goal of this readme is to explain how to install and use the project.
 ### Softwares
 
 * Blender
-* Python 3.7+
+* Python >=3.7, <=3.10
 * Jupyter notebook
 * Conda (if you need GPU and you are on Windows)
 
@@ -38,7 +38,6 @@ The goal of this readme is to explain how to install and use the project.
 * opencv_python >= 4.7.0.72
 * tqdm >= 4.63.1
 * ultralytics >= 8.0.71
-* bpy >= 3.5.0
 
 ```bash
 $ pip install -r requirements.txt
@@ -101,6 +100,8 @@ $ python predict.py -f=[File_path] -m=models/4_classes/weights/best.pt
                         or
 
 $ python predict.py -f=[File_path] -m=models/val_real/weights/best.pt
+
+-> python predict.py -f=data/Val_Real_1.png -m=models/val_real/weights/best.pt
 ```
 
 Some files are available in ```data/``` folder
@@ -148,14 +149,18 @@ $ jupyter notebook Model_trainer_custom.ipynb
 ### 1) annotation.py and annotation_low.py
 
 Create the annotations from groundtruth images.
-Place the groundtruth images and the program will generate annotations in Yolo format.
+Place the groundtruth images on a folder ```[Input_directory]``` and the program will generate annotations in Yolo format.
 
 ```bash
 $ python annotation.py -i=[Input_directory] -o=[Output_directory]
+
+-> python annotation.py -i=render_examples/groundtruth -o=result
 ```
 
 ```bash
 $ python annotation_low.py -i=[Input_directory] -o=[Output_directory]
+
+-> python annotation_low.py -i=render_examples/groundtruth -o=result
 ```
 
 The difference between annotation.py and annotation_low.py are the object class numbers (lines 47-72).
@@ -166,6 +171,8 @@ If the user wants to downgrade the resolution of the images.
 
 ```bash
 $ python down_resolution.py -i=[Input_directory] -o=[Output_directory] -r=[Resolution_width]
+
+-> python down_resolution.py -i=render_examples/render -o=result -r=320
 ```
 
 ### 3) squares.py
@@ -175,9 +182,7 @@ If the user wants to view the result of the annotation on an image.
 ```bash
 $ python squares.py -i=[Input_directory]
 
-                    or
-
-$ python squares.py -i=squares_example_folder
+-> python squares.py -i=squares_example_folder
 ```
 
 The [Input_directory] must have this structure :
