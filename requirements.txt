@@ -1,5 +1,5 @@
-numpy==1.21.3
-Pillow==9.5.0
-opencv_python==4.7.0.72
-tqdm==4.63.1
-ultralytics==8.0.71
+numpy>=1.21.3
+Pillow>=9.5.0
+opencv_python>=4.7.0.72
+tqdm>=4.63.1
+ultralytics>=8.0.71
