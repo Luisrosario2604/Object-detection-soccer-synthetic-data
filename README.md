@@ -91,7 +91,7 @@ Open ```[Soccer Arena] Win & Linux.blend``` in Blender.
 ## Windows users
 
 1) Use powershell instead of cmd.
-2) Use full flags names instead ```--input instead of -i=```
+2) Use full flags names ```--input instead of -i=```
 
 ## Usage (Use the models already trained)
 
