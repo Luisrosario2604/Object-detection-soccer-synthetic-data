@@ -104,7 +104,7 @@ $ python predict.py -f=[File_path] -m=models/val_real/weights/best.pt
 
 ```4_classes``` model (4 classes) : Model for all matches (cannot differentiate between 2 players from different teams)
 
-```val_real``` (5 classes) : Specific model trained for Valencia C.F versus Madrid C.F matches (can make the difference between 2 players from different teams)
+```val_real``` model (5 classes) : Specific model trained for Valencia C.F versus Madrid C.F matches (can make the difference between 2 players from different teams)
 
 Some files are available in ```data/``` folder
 
