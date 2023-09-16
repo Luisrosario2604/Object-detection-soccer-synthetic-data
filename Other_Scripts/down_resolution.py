@@ -63,7 +63,7 @@ def down_res(file_list, res, output_dir):
     for f in file_list:
         img = Image.open(f)
         img = img.resize((w, h), Image.Resampling.LANCZOS)
-        f_name = f.split('.')[0].split('/')[-1].split('\\')[-1] + ".png"
+        f_name = f.split('.')[-2].split('/')[-1].split('\\')[-1] + ".png"
         img.save(output_dir + f_name)
 
 

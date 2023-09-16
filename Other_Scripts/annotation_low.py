@@ -101,7 +101,7 @@ def get_all_files(input_dir):
         folder_name += "/"
 
     for file in glob.glob(folder_name + "*.png"):
-        if file.split('.')[0].split('/')[-1].split('\\')[-1].isnumeric():
+        if file.split('.')[-2].split('/')[-1].split('\\')[-1].isnumeric():
             file_list.append(file)
     return file_list
 
@@ -157,7 +157,7 @@ def get_squares(file_list, output_dir):
         h = img.shape[0]
 
         detections = get_one_square(f, img)
-        f_number = f.split('.')[0].split('/')[-1].split('\\')[-1]
+        f_number = f.split('.')[-2].split('/')[-1].split('\\')[-1]
         create_annotation_file(detections, w, h, f_number, output_dir)
 
 
