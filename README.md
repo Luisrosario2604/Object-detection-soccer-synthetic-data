@@ -35,10 +35,11 @@ The goal of this readme is to explain how to install and use the project.
 
 * jupyter ~= 1.0.0
 * numpy ~= 1.21.3
-* Pillow ~= 9.5.0
+* Pillow ~= 9.3.0
 * opencv_python ~= 4.7.0.72
-* tqdm ~= 4.63.1
-* ultralytics ~= 8.0.71
+* opencv-contrib-python~=4.8.0.76
+* tqdm >= 4.63.1
+* ultralytics >= 8.0.71
 
 ```bash
 $ pip3 install -r requirements.txt
@@ -100,6 +101,10 @@ $ python predict.py -f=[File_path] -m=models/val_real/weights/best.pt
 
 -> python predict.py -f=data/Val_Real_1.png -m=models/val_real/weights/best.pt
 ```
+
+```4_classes``` model (4 classes) : Model for all matches (cannot differentiate between 2 players from different teams)
+
+```val_real``` (5 classes) : Specific model trained for Valencia C.F versus Madrid C.F matches (can make the difference between 2 players from different teams)
 
 Some files are available in ```data/``` folder
 
