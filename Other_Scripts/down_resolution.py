@@ -43,11 +43,11 @@ def get_all_files(input_dir):
     file_list = []
     folder_name = str(input_dir)
 
-    if not folder_name.endswith("/"):
+    if folder_name.endswith("/") == False and folder_name.endswith("\\") == False:
         folder_name += "/"
 
     for file in glob.glob(folder_name + "*.png"):
-        if file.split('.')[0].split('/')[-1].isnumeric():
+        if file.split('.')[-2].split('/')[-1].split('\\')[-1].isnumeric():
             file_list.append(file)
     return file_list
 
@@ -57,13 +57,13 @@ def down_res(file_list, res, output_dir):
     h = int(w * 1080 / 1920)
     print("Resolution : " + str(w) + "x" + str(h))
 
-    if not output_dir.endswith("/"):
+    if output_dir.endswith("/") == False and output_dir.endswith("\\") == False:
         output_dir += "/"
 
     for f in file_list:
         img = Image.open(f)
         img = img.resize((w, h), Image.Resampling.LANCZOS)
-        f_name = f.split('.')[0].split('/')[-1] + ".png"
+        f_name = f.split('.')[0].split('/')[-1].split('\\')[-1] + ".png"
         img.save(output_dir + f_name)
 
 

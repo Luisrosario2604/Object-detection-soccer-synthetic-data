@@ -90,11 +90,11 @@ def get_all_files(input_dir):
     file_list = []
     folder_name = str(input_dir)
 
-    if not folder_name.endswith("/"):
+    if folder_name.endswith("/") == False and folder_name.endswith("\\") == False:
         folder_name += "/"
 
     for file in glob.glob(folder_name + "img/*.png"):
-        if file.split('.')[0].split('/')[-1].isnumeric():
+        if file.split('.')[-2].split('/')[-1].split('\\')[-1].isnumeric():
             file_list.append(file)
     return file_list
 
