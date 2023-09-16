@@ -1,13 +1,13 @@
 # Object-detection-soccer-synthetic-data
 
-Object detection in soccer scenes trained only with synthetic data (Blender renders)
+Object detection model for real football scenes, trained only with synthetic data (Blender renderings)
 
 #### 👨‍🎓 This project was carried out during my master's degree in computer vision at URJC - Madrid
 
 ## Summary
 
 This project is the result of my master thesis.
-This project presents an object detection model for soccer situations.
+This project presents an object detection model for (real) soccer situations.
 The model has been only trained with synthetic images created with Blender.
 The model has been trained via transfer learning with YoloV8.
 
@@ -33,17 +33,14 @@ The goal of this readme is to explain how to install and use the project.
 
 ### Python packages
 
-* numpy >= 1.21.3
-* Pillow >= 9.5.0
-* opencv_python >= 4.7.0.72
-* tqdm >= 4.63.1
-* ultralytics >= 8.0.71
+* jupyter ~= 1.0.0
+* numpy ~= 1.21.3
+* Pillow ~= 9.5.0
+* opencv_python ~= 4.7.0.72
+* tqdm ~= 4.63.1
+* ultralytics ~= 8.0.71
 
 ```bash
-$ pip install -r requirements.txt
-
-                or
-                
 $ pip3 install -r requirements.txt
 ```
 
