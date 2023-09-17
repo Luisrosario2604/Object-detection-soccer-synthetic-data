@@ -1,6 +1,6 @@
 # Object-detection-soccer-synthetic-data
 
-Object detection model for real football scenes, trained only with synthetic data (Blender renderings)
+Object detection model for real soccer scenes, trained only with synthetic data (Blender renderings)
 
 #### 👨‍🎓 This project was carried out during my master's degree in computer vision at URJC - Madrid
 
